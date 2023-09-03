@@ -1,8 +1,8 @@
-package calcs;
+package calc;
 
 
 
-public class Types {
+public class Rectangle {
 	 
 	
 	
