@@ -12,7 +12,7 @@ public class Program {
 		Product prod = new Product();
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Coloque os dados do produto");
+		System.out.println("Por favor coloque os dados do produto");
 		System.out.println("Qual é o nome do produto?");
 		prod.name = sc.nextLine();
 		System.out.println("Qual é o preço do produto?");
