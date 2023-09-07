@@ -19,9 +19,10 @@ public class Program {
 		
 		
 		Product prod = new Product(name, price);
+	
 
-		System.out.println("Dados do Produto, " + prod.name + ", $" + prod.price + " , " + prod.quantity
-				+ " Unidades, Total: $ " + (prod.quantity * prod.price));
+		System.out.println("Dados do Produto, " + prod.getName() + ", $" + prod.getPrice() + " , " + prod.getQuantity()
+				+ " Unidades, Total: $ " + (prod.getQuantity() * prod.getPrice()));
 
 		System.out.println("Digite a quantidade de produtos que deseja inserir no estoque");
 
@@ -29,8 +30,8 @@ public class Program {
 
 		prod.AddProducts(insertProd);
 
-		System.out.println("Estoque de " + prod.name + ", Unidades: " + prod.quantity + " Total: $"
-				+ (prod.quantity * prod.price));
+		System.out.println("Estoque de " + prod.getName() + ", Unidades: " + prod.getClass() + " Total: $"
+				+ (prod.getQuantity() * prod.getPrice()));
 
 		System.out.println("Digite a quantidade de produtos que deseja retirar do estoque");
 
@@ -38,8 +39,8 @@ public class Program {
 
 		prod.RemoveProducts(removeProd);
 
-		System.out.println("Estoque de " + prod.name + ", Unidades: " + prod.quantity + " Total: $"
-				+ (prod.quantity * prod.price));
+		System.out.println("Estoque de " + prod.getName() + ", Unidades: " + prod.getQuantity() + " Total: $"
+				+ (prod.getQuantity() * prod.getPrice()));
 
 		sc.close();
 
