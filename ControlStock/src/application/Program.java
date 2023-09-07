@@ -16,10 +16,9 @@ public class Program {
 		 String name = sc.nextLine();
 		System.out.println("Qual é o preço do produto?");
 		double price = sc.nextDouble();
-		System.out.println("Qual é a quantidade em estoque?");
-		int quantity = sc.nextInt();
 		
-		Product prod = new Product(name, price ,quantity);
+		
+		Product prod = new Product(name, price);
 
 		System.out.println("Dados do Produto, " + prod.name + ", $" + prod.price + " , " + prod.quantity
 				+ " Unidades, Total: $ " + (prod.quantity * prod.price));
